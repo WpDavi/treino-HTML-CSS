@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page nave</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="index.html"> <img src="imagens/logo.png" alt="" width="100%"> </a>
+      </div>
+      <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">Sobre</a></li>
+        <li> <a href="#">Productos</a></li>
+        <li> <a href="#">Preços</a></li>
+        <li> <a href="#">Contacto</a></li>
+        <li class="lg"> <a href="#">Longin</a> </li>
+      </ul>
+
+        <div class="manu-icon">
+          <img src="imagens/menu.png" alt="">
+        </div>
+      
+    </nav>
+    <main>
+      <div class="main_text">
+        <h1>  <b>Aumentar!</b> <strong>suas redes sociais Narketing Digital </strong></h1>
+        
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla hic in quasi aut, tempora quia repellendus optio maiores magnam numquam earum voluptatem consectetur reprehenderit non velit ratione! Quia, dicta placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex repudiandae voluptatum et? 
+        </p>
+        <button>Faça seu pedido</button>
+
+      </div>
+      <div class="main_img">
+        <img src="imagens/nave.png" alt="" >
+      </div>
+      
+    </main>
+  </div>    
+  <script>
+    var menu = document.querySelector('nav ul');
+    var menuIcon = document.querySelector('nav .manu-icon');
+    var menuIconImg = document.querySelector('nav .manu-icon img');
+
+    menuIcon.addEventListener('click',()=>{
+        menu.classList.toggle('activo');
+        if (menuIconImg.getAttribute("src") == 'imagens/menu.png') {
+            menuIconImg.setAttribute("src","imagens/close.png");
+        }else{
+            menuIconImg.setAttribute("src","imagens/menu.png"); 
+        }
+    })
+
+
+
+
+</script>
+
+</body>
+</html>
