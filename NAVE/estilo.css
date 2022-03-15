@@ -20,7 +20,12 @@ nav {
   justify-content: space-between;
 }
 nav .logo {
-  width: 90px;
+  width: 250px;
+  transition: all 0.5s;  
+}
+
+nav .logo:hover {
+  transform: scale(1.1);
 }
 
 nav ul {
@@ -99,7 +104,7 @@ nav ul {
     font-size: 5rem;
   }
   main .main_text p {
-    color: #8b8b8b;
+    color: #2e2c2c;
     margin: 20px 0 40px;
     width: 90%;
   }
